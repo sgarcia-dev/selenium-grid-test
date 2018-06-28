@@ -8,7 +8,7 @@ const DEV_ENV = process.env.NODE_ENV && process.env.NODE_ENV.toLowerCase().inclu
     PROD_ENV = process.env.NODE_ENV && process.env.NODE_ENV.toLowerCase().includes('prod'),
     HEADLESS_CHROME = process.env.CHROME_MODE && process.env.CHROME_MODE.toLowerCase().includes('headless'),
     CHROME_DRIVER_VERSION = '2.40',
-    GRID_HOST = '10.38.102.191';
+    GRID_HOST = '10.38.103.42';
 
 let SELENIUM_SERVER, WEBDRIVER_CLIENT;
 

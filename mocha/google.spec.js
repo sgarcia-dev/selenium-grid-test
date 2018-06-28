@@ -64,6 +64,15 @@ describe("Google Spec Suite", function(){
         const title = await WEBDRIVER_CLIENT.getTitle();
         expect(title).equals('Expedia - Google Search');
     });
+
+    it('Google "Chai" test', async function(){
+        this.timeout(200000);
+        await WEBDRIVER_CLIENT.url('https://www.google.com/search?q=Chai');
+        // await WEBDRIVER_CLIENT.setValue('input[name=q]', 'WebdriverIO');
+        // await WEBDRIVER_CLIENT.click('input[value="Google Search"]');
+        const title = await WEBDRIVER_CLIENT.getTitle();
+        expect(title).equals('Chai - Google Search');
+    });
 });
 
 function startSelenium () {

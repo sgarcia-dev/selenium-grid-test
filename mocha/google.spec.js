@@ -71,7 +71,7 @@ describe("Google Spec Suite", function(){
         // await WEBDRIVER_CLIENT.setValue('input[name=q]', 'WebdriverIO');
         // await WEBDRIVER_CLIENT.click('input[value="Google Search"]');
         const title = await WEBDRIVER_CLIENT.getTitle();
-        expect(title).equals('Chai - Google Search');
+        expect(title).equals('Chaii - Google Search');
     });
 });
 
